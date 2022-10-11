@@ -1,13 +1,12 @@
-import { setSelectionRange } from "@testing-library/user-event/dist/utils";
 import React from "react";
 
-const Light = ({ color, lit, setLit }) => {
+const Light = ({ color, light, setLight }) => {
   return (
     <div>
       <div
         className="light"
-        style={{ backgroundColor: color === lit ? color : "grey" }}
-        onClick={() => setLit(color)}
+        style={{ backgroundColor: color === light ? color : "grey" }}
+        onClick={() => setLight(color)}
       ></div>
     </div>
   );

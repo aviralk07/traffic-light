@@ -1,14 +1,14 @@
 import "./App.css";
-import React, { useState, usestate } from "react";
+import React, { useState } from "react";
 import Light from "./Light";
 
 function App() {
   const colors = ["red", "yellow", "green"];
-  const [lit, setlit] = useState("red");
+  const [light, setLight] = useState("");
   return (
     <div className="App">
       {colors.map((color) => {
-        return <Light color={color} lit={lit} setLit={setlit} />;
+        return <Light color={color} light={light} setLight={setLight} />;
       })}
     </div>
   );
